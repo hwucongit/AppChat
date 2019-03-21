@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_input_top">16dp</dimen>
+    <dimen name="margin_input_horizontal">16dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="margin_bottom">16dp</dimen>
+    <dimen name="radius_message">10dp</dimen>
+    <dimen name="size_image">164dp</dimen>
+    <dimen name="padding_icon">5dp</dimen>
+    <dimen name="size_image_cover">164dp</dimen>
+</resources>

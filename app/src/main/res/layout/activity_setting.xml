@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/setting_account"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_image_cover"
+        android:id="@+id/img_cover"
+        android:src="@drawable/img_cover_default"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft= "@dimen/margin_input_horizontal"
+        android:paddingRight="@dimen/margin_input_horizontal"
+        android:layout_below="@id/img_cover"
+        android:layout_marginTop="-100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="@dimen/size_image"
+            android:layout_height="@dimen/size_image"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/img_avatar">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_input_top"
+                    android:hint="@string/your_name"
+                    android:textColorHint="@color/color_grey_500"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/color_grey_500"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="@dimen/margin_input_top"
+                    android:hint="@string/your_email"
+                    android:textColorHint="@color/color_grey_500"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/color_grey_500"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_input_top"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/color_grey_500"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/color_grey_500"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_input_top"
+                    android:hint="@string/your_status"
+                    android:textColorHint="@color/color_grey_500"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/color_grey_500"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_change_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="Change Profile"
+            android:background="@drawable/bg_button_accept"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>

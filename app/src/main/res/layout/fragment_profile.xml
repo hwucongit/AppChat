@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_500"
+    android:paddingBottom="@dimen/margin_input_horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_image_cover"
+        android:id="@+id/img_cover"
+        android:src="@drawable/img_cover_default"
+        android:scaleType="centerCrop"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/default_profile"
+        android:layout_below="@id/img_cover"
+        android:layout_marginTop="-100dp"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_below="@id/img_avatar"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/request_status"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/tv_username"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_infor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_input_horizontal"
+        android:layout_below="@id/tv_status">
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birthday"
+            android:drawableLeft="@drawable/ic_cake_white_24dp"
+            android:drawablePadding="@dimen/padding_icon"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:drawableLeft="@drawable/ic_location_on_white_24dp"
+            android:drawablePadding="@dimen/padding_icon"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_below="@id/tv_birthday" />
+
+        <TextView
+            android:id="@+id/tv_career"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your career"
+            android:drawableLeft="@drawable/ic_work_white"
+            android:drawablePadding="@dimen/padding_icon"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_below="@id/tv_country"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_information"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/rl_infor"
+        android:orientation="horizontal"
+        android:layout_marginTop="56dp">
+
+        <TextView
+            android:id="@+id/tv_post"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Number \npost"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_followers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Number \nfollowers"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Edit \nprofile"
+            android:lines="2"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

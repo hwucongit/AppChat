@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_avatar_chat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_avatar"/>
+    <TextView
+        android:maxWidth="300dp"
+        android:id="@+id/tv_message"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_message_left"
+        android:textSize="14sp"
+        android:text="message"
+        android:layout_marginLeft="8dp"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="8dp"
+        android:padding="4dp"
+        android:id="@+id/iv_message_image"
+        android:background="#E0E0E0"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seen"
+        android:visibility="gone"
+        android:id="@+id/tv_seen"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/iv_message_image"
+        android:layout_alignParentEnd="true"/>
+
+
+</LinearLayout>

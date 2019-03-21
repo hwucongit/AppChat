@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgView_proPic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_account" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgView_proPic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Karun Shrestha"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="11 hrs"
+                android:textColor="@color/color_grey_500"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rellay1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="This is Status"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgView_postPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_status"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_notification"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rellay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgView_postPic"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp">
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgView_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rellay2"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_grey_500" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imgView_line">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/ic_thumb_up_black2_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Like"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_chat"
+                    app:srcCompat="@drawable/ic_chat"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Comment"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_send"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Share"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
